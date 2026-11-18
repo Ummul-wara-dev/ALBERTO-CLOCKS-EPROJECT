@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Watches - Alberto Clocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .watch-card { transition: 0.3s; border: 1px solid #d4af37; }
+        .watch-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .watch-img { height: 230px; object-fit: cover; width: 100%; }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-light py-2">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <small class="text-gold"><i class="bi bi-envelope"></i> info@albertoclocks.com</small>
+            <div class="d-flex gap-3 align-items-center">
+                <small class="text-gold"><i class="bi bi-eye"></i> Visitor: <span id="vName" class="fw-bold text-white">Guest</span> | No: <span id="count" class="fw-bold text-white">0</span></small>
+                <a href="login.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-person"></i> Customer Login</a>
+                <a href="admin.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-shield-lock"></i> Boss Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold text-gold" href="index.html"><i class="bi bi-clock-history"></i> ALBERTO CLOCKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-bold">
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link active text-gold" href="watches.html">Watches</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="contact.html">Contact & Order</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="faq.html">FAQs</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="inner-header text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-gold">Luxury Watches</h1>
+            <p class="text-white mb-0">Explore our finest collection of Swiss & gold luxury timepieces</p>
+        </div>
+    </header>
+
+    <!-- Category Navigation Buttons -->
+    <section class="container mt-5 text-center">
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-2 col-6"><a href="watches.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">All Watches</a></div>
+            <div class="col-md-2 col-6"><a href="luxury.html" class="btn bg-gold text-dark w-100 py-3 fs-5 fw-bold shadow border border-dark">Luxury</a></div>
+            <div class="col-md-2 col-6"><a href="vintage.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Vintage</a></div>
+            <div class="col-md-2 col-6"><a href="smart.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Smart</a></div>
+            <div class="col-md-2 col-6"><a href="men.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Men's</a></div>
+            <div class="col-md-2 col-6"><a href="women.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Women's</a></div>
+        </div>
+    </section>
+
+    <!-- 9 Luxury Watches -->
+    <section class="container my-5">
+        <hr class="mb-4">
+        <h2 class="text-center fw-bold text-maroon mb-4">Luxury Watches</h2>
+        <div class="row g-4">
+            <!-- 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/9978722/pexels-photo-9978722.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Royal Gold Chronograph">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Royal Gold Chronograph</h5>
+                        <p class="text-maroon fw-bold fs-5">$2,450</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Royal Gold Chronograph', '$2,450', 'https://images.pexels.com/photos/9978722/pexels-photo-9978722.jpeg?auto=compress&cs=tinysrgb&w=600', '18k gold-plated case with Swiss automatic movement, sapphire crystal glass, and 100m water resistance.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Imperial Silver Tourbillon">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Imperial Silver Tourbillon</h5>
+                        <p class="text-maroon fw-bold fs-5">$3,200</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Imperial Silver Tourbillon', '$3,200', 'https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=600', 'Hand-assembled Swiss tourbillon caliber housed in 904L surgical stainless steel with exhibition back.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Monaco Platinum Edition">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Monaco Platinum Edition</h5>
+                        <p class="text-maroon fw-bold fs-5">$4,100</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Monaco Platinum Edition', '$4,100', 'https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600', 'Limited edition platinum-finish timepiece featuring luminous hands, date window, and alligator strap.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Sovereign Emerald Dial">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Sovereign Emerald Dial</h5>
+                        <p class="text-maroon fw-bold fs-5">$2,750</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Sovereign Emerald Dial', '$2,750', 'https://images.pexels.com/photos/1697214/pexels-photo-1697214.jpeg?auto=compress&cs=tinysrgb&w=600', 'Deep emerald sunburst dial encased in brushed gold and steel with 72-hour power reserve.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/9981133/pexels-photo-9981133.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Geneva Classic Automatic">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Geneva Classic Automatic</h5>
+                        <p class="text-maroon fw-bold fs-5">$2,150</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Geneva Classic Automatic', '$2,150', 'https://images.pexels.com/photos/9981133/pexels-photo-9981133.jpeg?auto=compress&cs=tinysrgb&w=600', 'Self-winding Geneva-certified automatic watch with fluted bezel and deployment clasp.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/1034063/pexels-photo-1034063.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Crown Diamond Bezel">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Crown Diamond Bezel</h5>
+                        <p class="text-maroon fw-bold fs-5">$5,500</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Crown Diamond Bezel', '$5,500', 'https://images.pexels.com/photos/1034063/pexels-photo-1034063.jpeg?auto=compress&cs=tinysrgb&w=600', 'Hand-set VVS diamond bezel accents with mother-of-pearl dial and two-tone gold bracelet.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/236915/pexels-photo-236915.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Emperor Skeleton Watch">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Emperor Skeleton Watch</h5>
+                        <p class="text-maroon fw-bold fs-5">$3,800</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Emperor Skeleton Watch', '$3,800', 'https://images.pexels.com/photos/236915/pexels-photo-236915.jpeg?auto=compress&cs=tinysrgb&w=600', 'Open-worked transparent skeleton mechanical dial showcasing intricate gold-plated Swiss gears.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Grandiose Rose Gold">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Grandiose Rose Gold</h5>
+                        <p class="text-maroon fw-bold fs-5">$2,950</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Grandiose Rose Gold', '$2,950', 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=600', 'Warm 18k rose gold casing paired with hand-stitched Italian leather strap and moonphase display.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Prestige Sapphire Blue">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Prestige Sapphire Blue</h5>
+                        <p class="text-maroon fw-bold fs-5">$3,450</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Prestige Sapphire Blue', '$3,450', 'https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600', 'Royal blue ceramic bezel with COSC chronometer certification and anti-reflective sapphire glass.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Details Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border border-warning border-2">
+                <div class="modal-header bg-maroon text-gold">
+                    <h5 class="modal-title fw-bold" id="mName">Watch Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="mImg" src="" class="img-fluid rounded mb-3" style="height: 250px; width: 100%; object-fit: cover;" alt="Watch">
+                    <h4 class="text-maroon fw-bold" id="mPrice"></h4>
+                    <p class="text-muted mt-2" id="mDesc"></p>
+                </div>
+                <div class="modal-footer justify-content-center gap-2">
+                    <a href="contact.html" class="btn bg-gold text-dark fw-bold px-4">Order Now</a>
+                    <button type="button" class="btn btn-dark px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-3 mt-auto border-top border-warning border-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold"><i class="bi bi-clock-history"></i> Alberto Clocks</h5>
+                    <p class="small">Your one-stop destination for luxury watches, expert repair, and appraisal services.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none small text-white">Home</a></li>
+                        <li><a href="watches.html" class="text-decoration-none small text-white">Watches</a></li>
+                        <li><a href="about.html" class="text-decoration-none small text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-decoration-none small text-white">Contact & Order</a></li>
+                        <li><a href="faq.html" class="text-decoration-none small text-white">FAQs</a></li>
+                        <li><a href="sitemap.html" class="text-decoration-none small text-white">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Contact Info</h5>
+                    <p class="small mb-1"><i class="bi bi-geo-alt-fill text-gold"></i> 123 Luxury Avenue, New York, USA</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill text-gold"></i> +1 234 567 890</p>
+                    <p class="small"><i class="bi bi-envelope-fill text-gold"></i> info@albertoclocks.com</p>
+                </div>
+            </div>
+            <div class="bg-gold text-dark py-2 mt-3 rounded fw-bold text-center small">
+                <marquee behavior="scroll" direction="left">
+                    <i class="bi bi-calendar-event"></i> Date & Time: <span id="datetime"></span> | 
+                    <i class="bi bi-geo-alt-fill"></i> Location: New York, USA
+                </marquee>
+            </div>
+            <p class="mt-3 mb-0 small text-center text-muted">&copy; 2023 Alberto Clocks. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showDetails(name, price, img, desc) {
+            document.getElementById("mName").innerText = name;
+            document.getElementById("mPrice").innerText = price;
+            document.getElementById("mImg").src = img;
+            document.getElementById("mDesc").innerText = desc;
+            var modal = new bootstrap.Modal(document.getElementById("detailsModal"));
+            modal.show();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

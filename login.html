@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login - Alberto Clocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <nav class="navbar navbar-dark bg-maroon shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold text-gold" href="index.html"><i class="bi bi-clock-history"></i> ALBERTO CLOCKS</a>
+            <a href="index.html" class="btn btn-sm bg-gold text-dark fw-bold">Back Home</a>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow border-0 p-4 border-top border-4 border-warning">
+                    <h3 class="fw-bold text-maroon text-center mb-4">Customer Portal</h3>
+                    
+                    <!-- Login Form -->
+                    <div id="loginDiv">
+                        <p class="text-center text-muted">Enter your email to view your orders.</p>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Email Address</label>
+                            <input type="email" id="loginEmail" class="form-control custom-form-control" placeholder="Enter the email used for ordering">
+                        </div>
+                        <button onclick="customerLogin()" class="btn bg-maroon text-white fw-bold w-100">View My Orders</button>
+                    </div>
+
+                    <!-- Orders Display Area -->
+                    <div id="ordersDiv" class="d-none">
+                        <h5 class="fw-bold text-maroon mb-3">Your Orders</h5>
+                        <div id="customerOrdersList" class="list-group mb-3"></div>
+                        <button onclick="logoutCustomer()" class="btn btn-outline-dark fw-bold w-100">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-4 pb-3 mt-auto border-top border-warning border-3"><div class="container text-center"><div class="bg-gold text-dark py-2 mt-3 rounded fw-bold small"><marquee behavior="scroll" direction="left"><i class="bi bi-calendar-event"></i> Date & Time: <span id="datetime"></span> | <i class="bi bi-geo-alt-fill"></i> Location: <span id="location">Detecting...</span></marquee></div><p class="mt-3 mb-0 small text-muted">&copy; 2023 Alberto Clocks.</p></div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

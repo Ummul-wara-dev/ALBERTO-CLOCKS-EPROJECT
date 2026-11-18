@@ -1,0 +1,84 @@
+/* Royal Theme Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Colors */
+.bg-maroon { background-color: #4a0404 !important; } /* Deep Royal Maroon */
+.bg-black { background-color: #0a0a0a !important; }
+.text-gold { color: #D4AF37 !important; }
+.bg-gold { background-color: #D4AF37 !important; }
+.text-maroon { color: #4a0404 !important; }
+
+/* Slider */
+.carousel-item img {
+    height: 75vh;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* Category Images */
+.category-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #D4AF37; /* Golden Border */
+}
+.category-img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Watch Cards */
+.watch-card img {
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.watch-card {
+    transition: transform 0.3s;
+}
+.watch-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Forms */
+.custom-form-control {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.custom-form-control:focus {
+    border-color: #4a0404;
+    box-shadow: 0 0 5px rgba(74, 4, 4, 0.3);
+}
+
+/* Footer */
+footer p, footer a { color: #e0e0e0 !important; }
+footer h5 { color: #D4AF37 !important; }
+
+/* Page Header */
+.inner-header {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(74,4,4,0.8)), url('https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    min-height: 250px;
+}
+
+/* Top Notification (Toast) - Very Important */
+#topNotification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    min-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: none; /* Hidden by default */
+    border-radius: 5px;
+    font-weight: bold;
+}

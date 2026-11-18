@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map - Alberto Clocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-light py-2">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <small class="text-gold"><i class="bi bi-envelope"></i> info@albertoclocks.com</small>
+            <div class="d-flex gap-3 align-items-center">
+                <small class="text-gold"><i class="bi bi-eye"></i> Visitor: <span id="vName" class="fw-bold text-white">Guest</span> | No: <span id="count" class="fw-bold text-white">0</span></small>
+                <a href="login.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-person"></i> Customer Login</a>
+                <a href="admin.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-shield-lock"></i> Boss Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold text-gold" href="index.html"><i class="bi bi-clock-history"></i> ALBERTO CLOCKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-bold">
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="watches.html">Watches</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="contact.html">Contact & Order</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="faq.html">FAQs</a></li>
+                    <li class="nav-item px-2"><a class="nav-link active text-gold" href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="inner-header text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-gold">Site Map</h1>
+            <p class="text-white">Complete list of all pages and categories</p>
+        </div>
+    </header>
+
+    <!-- Site Map Links Section -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <!-- Main Pages -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-warning">
+                    <div class="card-header bg-maroon text-gold fw-bold fs-5">Main Pages</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled fs-6">
+                            <li class="mb-2"><a href="index.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Home</a></li>
+                            <li class="mb-2"><a href="watches.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Watches</a></li>
+                            <li class="mb-2"><a href="about.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> About Us</a></li>
+                            <li class="mb-2"><a href="contact.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Contact & Order</a></li>
+                            <li class="mb-2"><a href="faq.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> FAQs</a></li>
+                            <li class="mb-2"><a href="sitemap.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Watch Categories -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-warning">
+                    <div class="card-header bg-maroon text-gold fw-bold fs-5">Watch Categories</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled fs-6">
+                            <li class="mb-2"><a href="watches.html?cat=luxury" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Luxury Watches</a></li>
+                            <li class="mb-2"><a href="watches.html?cat=vintage" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Vintage Watches</a></li>
+                            <li class="mb-2"><a href="watches.html?cat=smart" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Smart Watches</a></li>
+                            <li class="mb-2"><a href="watches.html?cat=men" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Men's Watches</a></li>
+                            <li class="mb-2"><a href="watches.html?cat=women" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Women's Watches</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User & Admin Login -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-warning">
+                    <div class="card-header bg-maroon text-gold fw-bold fs-5">Account & Support</div>
+                    <div class="card-body">
+                        <ul class="list-unstyled fs-6">
+                            <li class="mb-2"><a href="login.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Customer Login</a></li>
+                            <li class="mb-2"><a href="admin.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Boss Login</a></li>
+                            <li class="mb-2"><a href="contact.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Order & Repair Service</a></li>
+                            <li class="mb-2"><a href="faq.html" class="text-decoration-none text-dark fw-bold"><i class="bi bi-chevron-right text-maroon"></i> Ask a Question</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New York, USA Map -->
+        <div class="mt-5">
+            <h3 class="text-center fw-bold text-maroon mb-3">Our Location - New York, USA</h3>
+            <div class="border border-warning border-2 rounded shadow overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+                        <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-3 mt-auto border-top border-warning border-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold"><i class="bi bi-clock-history"></i> Alberto Clocks</h5>
+                    <p class="small">Your one-stop destination for luxury watches, expert repair, and appraisal services.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none small">Home</a></li>
+                        <li><a href="watches.html" class="text-decoration-none small">Watches</a></li>
+                        <li><a href="about.html" class="text-decoration-none small">About Us</a></li>
+                        <li><a href="contact.html" class="text-decoration-none small">Contact & Order</a></li>
+                        <li><a href="faq.html" class="text-decoration-none small">FAQs</a></li>
+                        <li><a href="sitemap.html" class="text-decoration-none small">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Contact Info</h5>
+                    <p class="small mb-1"><i class="bi bi-geo-alt-fill text-gold"></i> 123 Luxury Avenue, New York, USA</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill text-gold"></i> +1 234 567 890</p>
+                    <p class="small"><i class="bi bi-envelope-fill text-gold"></i> info@albertoclocks.com</p>
+                </div>
+            </div>
+            <div class="bg-gold text-dark py-2 mt-3 rounded fw-bold text-center small">
+                <marquee behavior="scroll" direction="left">
+                    <i class="bi bi-calendar-event"></i> Date & Time: <span id="datetime"></span> | 
+                    <i class="bi bi-geo-alt-fill"></i> Location: New York, USA
+                </marquee>
+            </div>
+            <p class="mt-3 mb-0 small text-center text-muted">&copy; 2023 Alberto Clocks. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+                        </head>
+                        </body>

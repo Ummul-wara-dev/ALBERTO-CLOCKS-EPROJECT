@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Watches - Alberto Clocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .watch-card { transition: 0.3s; border: 1px solid #d4af37; }
+        .watch-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .watch-img { height: 230px; object-fit: cover; width: 100%; }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Top Bar -->
+    <div class="bg-black text-light py-2">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <small class="text-gold"><i class="bi bi-envelope"></i> info@albertoclocks.com</small>
+            <div class="d-flex gap-3 align-items-center">
+                <small class="text-gold"><i class="bi bi-eye"></i> Visitor: <span id="vName" class="fw-bold text-white">Guest</span> | No: <span id="count" class="fw-bold text-white">0</span></small>
+                <a href="login.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-person"></i> Customer Login</a>
+                <a href="admin.html" class="text-gold text-decoration-none small fw-bold"><i class="bi bi-shield-lock"></i> Boss Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-maroon shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold text-gold" href="index.html"><i class="bi bi-clock-history"></i> ALBERTO CLOCKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-bold">
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item px-2"><a class="nav-link active text-gold" href="watches.html">Watches</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="contact.html">Contact & Order</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="faq.html">FAQs</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="inner-header text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-gold">Vintage Watches</h1>
+            <p class="text-white mb-0">Restored antique pocket watches & classic leather timepieces</p>
+        </div>
+    </header>
+
+    <!-- Category Navigation Buttons -->
+    <section class="container mt-5 text-center">
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-2 col-6"><a href="watches.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">All Watches</a></div>
+            <div class="col-md-2 col-6"><a href="luxury.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Luxury</a></div>
+            <div class="col-md-2 col-6"><a href="vintage.html" class="btn bg-gold text-dark w-100 py-3 fs-5 fw-bold shadow border border-dark">Vintage</a></div>
+            <div class="col-md-2 col-6"><a href="smart.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Smart</a></div>
+            <div class="col-md-2 col-6"><a href="men.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Men's</a></div>
+            <div class="col-md-2 col-6"><a href="women.html" class="btn bg-maroon text-white w-100 py-3 fs-5 fw-bold shadow border border-gold">Women's</a></div>
+        </div>
+    </section>
+
+    <!-- 9 Vintage Watches -->
+    <section class="container my-5">
+        <hr class="mb-4">
+        <h2 class="text-center fw-bold text-maroon mb-4">Vintage Watches</h2>
+        <div class="row g-4">
+            <!-- 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="1965 Heritage Pocket Watch">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">1965 Heritage Pocket Watch</h5>
+                        <p class="text-maroon fw-bold fs-5">$850</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('1965 Heritage Pocket Watch', '$850', 'https://images.pexels.com/photos/277390/pexels-photo-277390.jpeg?auto=compress&cs=tinysrgb&w=600', 'Restored 1965 antique brass pocket watch featuring Roman numerals, manual wind-up movement, and heavy gold-tone chain.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Antique Brass Pocket Relic">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Antique Brass Pocket Relic</h5>
+                        <p class="text-maroon fw-bold fs-5">$940</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Antique Brass Pocket Relic', '$940', 'https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&w=600', 'Engraved hunter-case antique pocket watch with exposed mechanical gears and collector presentation box.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Classic Brown Leather 1972">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Classic Brown Leather 1972</h5>
+                        <p class="text-maroon fw-bold fs-5">$620</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Classic Brown Leather 1972', '$620', 'https://images.pexels.com/photos/125779/pexels-photo-125779.jpeg?auto=compress&cs=tinysrgb&w=600', 'Distressed saddle brown leather strap paired with warm vintage dial and Swiss hand-wound movement.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/364822/pexels-photo-364822.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Victorian Engraved Gold">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Victorian Engraved Gold</h5>
+                        <p class="text-maroon fw-bold fs-5">$1,180</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Victorian Engraved Gold', '$1,180', 'https://images.pexels.com/photos/364822/pexels-photo-364822.jpeg?auto=compress&cs=tinysrgb&w=600', 'Rare Victorian-inspired gold-plated pocket timepiece with porcelain dial and filigree hands.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/158833/pexels-photo-158833.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Old London Railway Watch">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Old London Railway Watch</h5>
+                        <p class="text-maroon fw-bold fs-5">$890</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Old London Railway Watch', '$890', 'https://images.pexels.com/photos/158833/pexels-photo-158833.jpeg?auto=compress&cs=tinysrgb&w=600', 'Authentic 1950s railway-grade watch restored by Alberto experts with high-contrast Arabic markers.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="1968 Retro Tan Strap">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">1968 Retro Tan Strap</h5>
+                        <p class="text-maroon fw-bold fs-5">$580</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('1968 Retro Tan Strap', '$580', 'https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&w=600', 'Minimalist 1968 vintage wristwatch with tan stitched leather strap and domed acrylic glass.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/2494608/pexels-photo-2494608.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Heritage Mechanical 1959">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Heritage Mechanical 1959</h5>
+                        <p class="text-maroon fw-bold fs-5">$1,050</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Heritage Mechanical 1959', '$1,050', 'https://images.pexels.com/photos/2494608/pexels-photo-2494608.jpeg?auto=compress&cs=tinysrgb&w=600', '17-jewel mechanical manual-wind timepiece with sub-seconds dial and certificate of authenticity.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/128206/pexels-photo-128206.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Classic Roman Ivory 1975">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Classic Roman Ivory 1975</h5>
+                        <p class="text-maroon fw-bold fs-5">$690</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Classic Roman Ivory 1975', '$690', 'https://images.pexels.com/photos/128206/pexels-photo-128206.jpeg?auto=compress&cs=tinysrgb&w=600', 'Ivory dial with traditional Roman numerals, slim brass bezel, and aged brown leather strap.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow watch-card">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top watch-img" alt="Grandfather Vault Pocket">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold">Grandfather Vault Pocket</h5>
+                        <p class="text-maroon fw-bold fs-5">$1,290</p>
+                        <button type="button" class="btn bg-maroon text-gold fw-bold mt-auto border border-gold" onclick="showDetails('Grandfather Vault Pocket', '$1,290', 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=600', 'Limited collector edition double-cover antique pocket watch from our private vault.')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Details Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border border-warning border-2">
+                <div class="modal-header bg-maroon text-gold">
+                    <h5 class="modal-title fw-bold" id="mName">Watch Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="mImg" src="" class="img-fluid rounded mb-3" style="height: 250px; width: 100%; object-fit: cover;" alt="Watch">
+                    <h4 class="text-maroon fw-bold" id="mPrice"></h4>
+                    <p class="text-muted mt-2" id="mDesc"></p>
+                </div>
+                <div class="modal-footer justify-content-center gap-2">
+                    <a href="contact.html" class="btn bg-gold text-dark fw-bold px-4">Order Now</a>
+                    <button type="button" class="btn btn-dark px-4" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-3 mt-auto border-top border-warning border-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold"><i class="bi bi-clock-history"></i> Alberto Clocks</h5>
+                    <p class="small">Your one-stop destination for luxury watches, expert repair, and appraisal services.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none small text-white">Home</a></li>
+                        <li><a href="watches.html" class="text-decoration-none small text-white">Watches</a></li>
+                        <li><a href="about.html" class="text-decoration-none small text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-decoration-none small text-white">Contact & Order</a></li>
+                        <li><a href="faq.html" class="text-decoration-none small text-white">FAQs</a></li>
+                        <li><a href="sitemap.html" class="text-decoration-none small text-white">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-gold fw-bold">Contact Info</h5>
+                    <p class="small mb-1"><i class="bi bi-geo-alt-fill text-gold"></i> 123 Luxury Avenue, New York, USA</p>
+                    <p class="small mb-1"><i class="bi bi-telephone-fill text-gold"></i> +1 234 567 890</p>
+                    <p class="small"><i class="bi bi-envelope-fill text-gold"></i> info@albertoclocks.com</p>
+                </div>
+            </div>
+            <div class="bg-gold text-dark py-2 mt-3 rounded fw-bold text-center small">
+                <marquee behavior="scroll" direction="left">
+                    <i class="bi bi-calendar-event"></i> Date & Time: <span id="datetime"></span> | 
+                    <i class="bi bi-geo-alt-fill"></i> Location: New York, USA
+                </marquee>
+            </div>
+            <p class="mt-3 mb-0 small text-center text-muted">&copy; 2023 Alberto Clocks. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showDetails(name, price, img, desc) {
+            document.getElementById("mName").innerText = name;
+            document.getElementById("mPrice").innerText = price;
+            document.getElementById("mImg").src = img;
+            document.getElementById("mDesc").innerText = desc;
+            var modal = new bootstrap.Modal(document.getElementById("detailsModal"));
+            modal.show();
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
